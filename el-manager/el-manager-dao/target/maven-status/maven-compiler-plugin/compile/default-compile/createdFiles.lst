@@ -1,0 +1,11 @@
+cn\elmall\mapper\TbOrderMapper.class
+cn\elmall\mapper\TbUserMapper.class
+cn\elmall\mapper\TbContentCategoryMapper.class
+cn\elmall\mapper\TbContentMapper.class
+cn\elmall\mapper\TbItemCatMapper.class
+cn\elmall\mapper\TbItemParamItemMapper.class
+cn\elmall\mapper\TbItemParamMapper.class
+cn\elmall\mapper\TbItemMapper.class
+cn\elmall\mapper\TbItemDescMapper.class
+cn\elmall\mapper\TbOrderItemMapper.class
+cn\elmall\mapper\TbOrderShippingMapper.class

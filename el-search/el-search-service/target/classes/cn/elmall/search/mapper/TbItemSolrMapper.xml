@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- namespace 对应接口的全名称 ； 接口的名称和mapper.xml的名称要一致； 要在 -->
+<mapper namespace="cn.elmall.search.mapper.TbItemSolrMapper">
+	<select id="getItemList"
+		resultType="cn.elmall.common.pojo.SearchItem">
+		SELECT
+		a.id,
+		a.title,
+		a.sell_point,
+		a.price,
+		a.image,
+		b.`name`
+		category_name
+		FROM
+		`tb_item` a
+		LEFT JOIN tb_item_cat b ON a.cid = b.id
+		WHERE a.`status`=1
+	</select>
+	<!--SearchItem getItemById(Long itemId); -->
+	<select id="getItemById" parameterType="long"
+		resultType="cn.elmall.common.pojo.SearchItem">
+		SELECT
+		a.id,
+		a.title,
+		a.sell_point,
+		a.price,
+		a.image,
+		b.`name`
+		category_name
+		FROM
+		`tb_item` a
+		LEFT JOIN tb_item_cat b ON a.cid = b.id
+		WHERE a.`status`=1
+		and a.id=#{itemId}
+	</select>
+</mapper>

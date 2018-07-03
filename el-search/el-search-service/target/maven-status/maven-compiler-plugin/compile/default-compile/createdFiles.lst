@@ -1,0 +1,6 @@
+cn\elmall\search\service\impl\SearchServiceImpl.class
+cn\elmall\search\service\impl\ItemAddToSolrServiceImpl.class
+cn\elmall\search\listenmq\ItemAddMessageListener.class
+cn\elmall\search\mapper\TbItemSolrMapper.class
+cn\elmall\search\dao\SearchDao.class
+cn\elmall\search\listenmq\MyMessageListener.class
